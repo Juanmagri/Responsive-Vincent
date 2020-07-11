@@ -1,1 +1,1 @@
-Van Gogh's based blog.
+Van Gogh's based responsive blog version.

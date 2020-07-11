@@ -53,6 +53,10 @@ nav ul li a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: bold;
+    color: #FFF;
+}
+
+nav ul li a:hover{
     color: #F5F2F2;
 }
 
@@ -117,6 +121,8 @@ main{
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #email{
@@ -137,13 +143,20 @@ main{
 
 #send{
     border: 1px solid transparent;
-    margin-left: 0;
+    margin-left: -1px;
     flex: 1;
     background-color: #638FFF;
     color: white;
     padding-bottom: 3px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+#send:focus{
+    border: 1px solid transparent;
+    background-color: #5073CC;
+    outline: none;
+    color: #B0C6FF;
 }
 
 footer{
@@ -153,4 +166,67 @@ footer{
     background-color: #333333;
     margin-top: -1px;
     font-size: smaller;
+}
+
+@media screem and (max-width: 1024px){
+}
+
+@media screen and (max-width: 768px){
+    .profilepic{
+        width: 130px;
+        height: 160px;
+    }
+    .r-column{
+        flex: initial;
+        width: 30vw;
+        min-width: 170px;
+    }
+    #email, #send{
+        overflow: auto;
+    }
+    #send{
+        text-indent: -3px;
+    }
+
+@media screen and (max-width: 480px){
+    body{
+        font-size: 14px;
+    }
+    .container{
+        border-bottom-left-radius: initial;
+        border-bottom-right-radius: initial;
+    }
+    
+    .headerImage{
+        margin: 2vh;
+    }
+    
+    nav{
+        border-top-left-radius: initial;
+        border-top-right-radius: initial;
+        font-size: .95em;
+    }
+    
+    .profilepic{
+        float: initial;
+        width: 75vw;
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .r-column{
+        width: 100%;
+    }
+
+    .column-box{
+        margin: 7px 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .profilepic{
+        width: 100%;
+    }
 }
